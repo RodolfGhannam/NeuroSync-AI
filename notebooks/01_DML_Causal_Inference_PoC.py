@@ -120,8 +120,8 @@ def run_causal_analysis() -> None:
     print("Uncanny Valley and feels manipulative.")
     print("\nSYMBIOTIC EXTENSION (NeuroSync AI):")
     print("While Uysal (2025) proved this via static 2x2 experimental designs, NeuroSync AI")
-    print("operationalizes this finding into a dynamic, real-time calibration engine that")
-    print("can be deployed in production (addressing the latency gaps of EventChat, 2026).")
+    print("operationalises this finding into a dynamic, real-time calibration engine that")
+    print("can be deployed at scale (addressing the latency gaps of EventChat, 2026).")
     print("="*70 + "\n")
 
 if __name__ == "__main__":

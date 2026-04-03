@@ -8,7 +8,7 @@
 
 ## 1. Overview and Symbiotic Research Agenda
 
-NeuroSync AI is a dual-layer conversational architecture designed to solve the paradox of artificial empathy in frontline service encounters. Built specifically to address the open challenges identified by the **Mobiliar Lab for Analytics**, this artifact operationalises the lab's recent theoretical breakthroughs into a testable, research-grade Proof of Concept system.
+NeuroSync AI is a dual-layer conversational architecture designed to address the paradox of artificial empathy in frontline service encounters. Built specifically to address the open challenges identified by the **Mobiliar Lab for Analytics**, this artifact operationalises the lab's recent theoretical breakthroughs into a testable, research-grade Proof of Concept system.
 
 ### Addressing Open Challenges from the Mobiliar Lab:
 1. **The Trojan Horse Paradox (Uysal et al., 2025):** While Uysal proved that AI empathy protects against service failures in routine tasks but harms in complex ones, the study relied on static 2x2 experimental designs. **NeuroSync AI operationalises this** by introducing dynamic, real-time calibration of anthropomorphism based on user cognitive load, extending the foundational *Trojan Horse* framework (Uysal et al., 2024).
@@ -30,7 +30,7 @@ The system is built on a robust, research-grade Proof of Concept stack, prioriti
 ┌─────────────────────────────────────────────────────────┐
 │ SYNCHRONOUS LAYER (Real-Time Affective Computing)       │
 │ - Engine: Hume AI (EVI) / OpenClaw                      │
-│ - Logic: Decodes user stress (Neuroception of Safety)   │
+│ - Logic: Decodes user stress (Affective State Calibration) │
 │ - Action: Dynamically calibrates Anthropomorphism Level │
 └─────────────────────────────────────────────────────────┘
        │ (Affective State & Chat Logs)
@@ -61,7 +61,7 @@ NeuroSync AI is grounded in rigorous Marketing and Information Systems theory, d
 | Theory / Framework | Key Reference | Symbiotic Application in NeuroSync AI |
 | :--- | :--- | :--- |
 | **The Trojan Horse Effect** | Uysal et al. (2025) | Transforms static empathy findings into a dynamic, real-time calibration engine. |
-| **Trustworthy LLM Standards** | Benk et al. (2025) | Operationalizes user expectations for transparency during high-stress encounters. |
+| **Trustworthy LLM Standards** | Benk et al. (2025) | Operationalises user expectations for transparency during high-stress encounters. |
 | **Chatbot Uncertainty Taxonomy (CUT)** | Asisof (2025) | Maps dynamic tone adjustments to specific reductions in functional and relational uncertainty. |
 | **Agentic Recommender Systems** | Ollier et al. (2024/2026) | Adds the missing "affective causal layer" to the EventChat architecture. |
 
@@ -78,7 +78,7 @@ NeuroSync-AI/
 │   └── neuro_engine.py          # Hume EVI integration (placeholder)
 ├── notebooks/
 │   └── 01_DML_Causal_Inference_PoC.py # EconML script proving the Trojan Horse effect
-├── Dockerfile                   # Production-ready containerization (Gunicorn)
+├── Dockerfile                   # Research-grade containerisation (Gunicorn)
 ├── requirements.txt             # Python dependencies (EconML, Flask, Hume)
 ├── .gitignore                   # Standard Python gitignore
 ├── LICENSE                      # MIT License
@@ -111,7 +111,8 @@ To run the Asynchronous Causal Layer (DML) simulation:
 ## 6. References
 
 1. Uysal, E., Efthymiou, F., Mari, A., & Brooks, S. (2025). No hard feelings - The protective power of AI empathy during service interaction failures. *SSRN*.
-2. Benk, M., Wettstein, L., Schlicker, N., von Wangenheim, F., & Scharowski, N. (2025). Bridging the Knowledge Gap: Understanding User Expectations for Trustworthy LLM Standards. *Proceedings of the AAAI Conference on Artificial Intelligence*.
-3. Asisof, A. (2025). Retrieving Under Uncertainty: Towards a Chatbot Uncertainty Taxonomy (CUT) for Information Retrieval. *ACM*.
-4. Ollier, J., et al. (2024/2026). EventChat: Implementation and user-centric evaluation of a large language model-driven conversational recommender system. *ACM Transactions*.
-5. Huang, M.-H., & Rust, R. T. (2021). A strategic framework for artificial intelligence in marketing. *Journal of the Academy of Marketing Science*.
+2. Uysal, E., et al. (2024). Trojan horse or useful helper? A relationship perspective on artificial intelligence assistants with humanlike features. *Journal of the Academy of Marketing Science*. doi:10.1007/s11747-024-01044-7
+3. Benk, M., Wettstein, L., Schlicker, N., von Wangenheim, F., & Scharowski, N. (2025). Bridging the Knowledge Gap: Understanding User Expectations for Trustworthy LLM Standards. *Proceedings of the AAAI Conference on Artificial Intelligence*.
+4. Asisof, A. (2025). Retrieving Under Uncertainty: Towards a Chatbot Uncertainty Taxonomy (CUT) for Information Retrieval. *ACM*.
+5. Ollier, J., et al. (2024/2026). EventChat: Implementation and user-centric evaluation of a large language model-driven conversational recommender system. *ACM Transactions*.
+6. Huang, M.-H., & Rust, R. T. (2021). Artificial empathy in marketing interactions: Bridging the human-AI gap in affective and social customer experience. *Journal of the Academy of Marketing Science*, 49, 625–643. doi:10.1007/s11747-020-00753-x
