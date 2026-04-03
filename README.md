@@ -1,4 +1,4 @@
-# NeuroSync AI: Co-Adaptive Causal Attribution for Resilience and Empathy (C-CARE)
+# NeuroSync AI: Co-Adaptive Conversational Agent for Relational Empowerment (C-CARE)
 
 **A Technical Artifact for the Mobiliar Lab for Analytics (ETH Zurich)**  
 **Aligned with the MTEC Foundation research agenda**  
@@ -8,20 +8,20 @@
 
 ## 1. Overview and Symbiotic Research Agenda
 
-NeuroSync AI is a dual-layer conversational architecture designed to address the paradox of artificial empathy in frontline service encounters. Built specifically to address the open challenges identified by the **Mobiliar Lab for Analytics**, this artifact operationalises the lab's recent theoretical breakthroughs into a testable, research-grade Proof of Concept system.
+NeuroSync AI is a dual-layer conversational architecture designed to address the paradox of artificial empathy in frontline service encounters. Built specifically to tackle the open challenges identified by the **Mobiliar Lab for Analytics**, this artifact operationalises the lab's recent theoretical breakthroughs into a testable, research-grade Proof of Concept system.
 
 ### Addressing Open Challenges from the Mobiliar Lab:
-1. **The Trojan Horse Paradox (Uysal et al., 2025):** While Uysal proved that AI empathy protects against service failures in routine tasks but harms in complex ones, the study relied on static 2x2 experimental designs. **NeuroSync AI operationalises this** by introducing dynamic, real-time calibration of anthropomorphism based on user cognitive load, extending the foundational *Trojan Horse* framework (Uysal et al., 2024).
-2. **The Trustworthy LLM Gap (Benk et al., 2025, AAAI):** Benk identified a critical gap between LLM standards and user expectations for transparency. **NeuroSync AI operationalises this** by using transparency as an operational tool: when user stress peaks, the bot explicitly down-regulates empathy, signaling its machine nature to reduce relational uncertainty.
+1. **The Trojan Horse Paradox (Uysal et al., 2025):** While Uysal demonstrated that AI empathy protects against service failures in routine tasks but harms in complex ones, the study relied on static 2x2 experimental designs. **NeuroSync AI operationalises this** by introducing dynamic, real-time calibration of anthropomorphism based on user cognitive load, extending the foundational *Trojan Horse* framework (Uysal et al., 2024).
+2. **The Trustworthy LLM Gap (Benk et al., 2025, AAAI):** Benk identified a critical gap between LLM standards and user expectations for transparency. **NeuroSync AI operationalises this** by using transparency as an operational tool: when user stress peaks, the bot explicitly down-regulates empathy, signalling its machine nature to reduce relational uncertainty.
 3. **Chatbot Uncertainty Taxonomy (Asisof, 2025):** Asisof mapped the 5 dimensions of user uncertainty (CUT). **NeuroSync AI operationalises this taxonomy** by using causal inference to measure exactly which type of uncertainty is reduced when anthropomorphism is calibrated.
 
-By bridging these gaps, NeuroSync AI is designed to run large-scale, closed-loop field experiments that prove the causal business impact of the Mobiliar Lab's theories.
+By bridging these gaps, NeuroSync AI is designed to run large-scale, closed-loop field experiments that demonstrate the causal business impact of the Mobiliar Lab's theories.
 
 ---
 
 ## 2. Architecture: The C-CARE Protocol
 
-The system is built on a robust, research-grade Proof of Concept stack, prioritizing low latency and rigorous causal tracking (addressing the architectural limitations identified in *EventChat*, Ollier et al., 2024/2026).
+The system is built on a robust, research-grade Proof of Concept stack, prioritising low latency and rigorous causal tracking (addressing the architectural limitations identified in *EventChat*, Ollier et al., 2024/2026).
 
 ```text
 [User Input: Voice/Text] 
@@ -77,7 +77,7 @@ NeuroSync-AI/
 │   ├── api_sync.py              # Flask/FastAPI routing and synchronous logic
 │   └── neuro_engine.py          # Hume EVI integration (placeholder)
 ├── notebooks/
-│   └── 01_DML_Causal_Inference_PoC.py # EconML script proving the Trojan Horse effect
+│   └── 01_DML_Causal_Inference_PoC.py # EconML script demonstrating the Trojan Horse effect
 ├── Dockerfile                   # Research-grade containerisation (Gunicorn)
 ├── requirements.txt             # Python dependencies (EconML, Flask, Hume)
 ├── .gitignore                   # Standard Python gitignore
@@ -104,7 +104,7 @@ To run the Asynchronous Causal Layer (DML) simulation:
    ```bash
    python notebooks/01_DML_Causal_Inference_PoC.py
    ```
-   *Expected Output:* The script will generate synthetic service encounters and use EconML to prove that high anthropomorphism increases NPS in routine tasks (+1.89) but decreases NPS in complex tasks (-1.81), validating the Trojan Horse hypothesis mathematically.
+   *Expected Output:* The script will generate synthetic service encounters and use EconML to demonstrate that high anthropomorphism increases NPS in routine tasks (+1.89) but decreases NPS in complex tasks (-1.81), validating the Trojan Horse hypothesis mathematically.
 
 ---
 
@@ -115,4 +115,5 @@ To run the Asynchronous Causal Layer (DML) simulation:
 3. Benk, M., Wettstein, L., Schlicker, N., von Wangenheim, F., & Scharowski, N. (2025). Bridging the Knowledge Gap: Understanding User Expectations for Trustworthy LLM Standards. *Proceedings of the AAAI Conference on Artificial Intelligence*.
 4. Asisof, A. (2025). Retrieving Under Uncertainty: Towards a Chatbot Uncertainty Taxonomy (CUT) for Information Retrieval. *ACM*.
 5. Ollier, J., et al. (2024/2026). EventChat: Implementation and user-centric evaluation of a large language model-driven conversational recommender system. *ACM Transactions*.
-6. Huang, M.-H., & Rust, R. T. (2021). Artificial empathy in marketing interactions: Bridging the human-AI gap in affective and social customer experience. *Journal of the Academy of Marketing Science*, 49, 625–643. doi:10.1007/s11747-020-00753-x
+6. Liu-Thompkins, Y., Okazaki, S., & Li, H. (2022). Artificial empathy in marketing interactions: Bridging the human-AI gap in affective and social customer experience. *Journal of the Academy of Marketing Science*, 50(6), 1198–1218. doi:10.1007/s11747-022-00892-5
+7. Kim, S. Y., Schmitt, B. H., & Thalmann, N. M. (2019). Eliza in the uncanny valley: Anthropomorphising consumer robots increases their perceived warmth but decreases liking. *Marketing Letters*, 30(1), 1–12. doi:10.1007/s11002-019-09485-9

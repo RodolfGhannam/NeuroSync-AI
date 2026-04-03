@@ -91,7 +91,7 @@ def run_causal_analysis() -> None:
     est.fit(Y, T, X=X)
 
     print("[4/4] Estimating Heterogeneous Treatment Effects (HTE)...")
-    # Let's test two specific scenarios to prove the paradox
+    # Let's test two specific scenarios to demonstrate the paradox
     # Scenario A: Routine Service (Complexity = 0.1), Average AI Literacy (0.5)
     # Scenario B: Complex Service (Complexity = 0.9), Average AI Literacy (0.5)
     X_test = np.array([[0.1, 0.5], [0.9, 0.5]])
@@ -114,12 +114,12 @@ def run_causal_analysis() -> None:
     
     print("\n" + "-"*70)
     print("MANAGERIAL INSIGHT (Mobiliar Lab Alignment):")
-    print("As theorized by the 'Trojan Horse' effect (Uysal et al., 2025), maximizing AI empathy")
+    print("As theorised by the 'Trojan Horse' effect (Uysal et al., 2025), maximising AI empathy")
     print("is counterproductive. In routine tasks, high anthropomorphism improves NPS.")
     print("However, in complex, high-stress tasks, it actively harms NPS as it triggers the")
     print("Uncanny Valley and feels manipulative.")
     print("\nSYMBIOTIC EXTENSION (NeuroSync AI):")
-    print("While Uysal (2025) proved this via static 2x2 experimental designs, NeuroSync AI")
+    print("While Uysal (2025) demonstrated this via static 2x2 experimental designs, NeuroSync AI")
     print("operationalises this finding into a dynamic, real-time calibration engine that")
     print("can be deployed at scale (addressing the latency gaps of EventChat, 2026).")
     print("="*70 + "\n")

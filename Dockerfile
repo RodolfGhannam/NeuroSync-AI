@@ -1,5 +1,5 @@
 # NeuroSync AI - Synchronous Layer
-# Production-ready Dockerfile for the C-CARE Protocol API
+# Research-grade Dockerfile for the C-CARE Protocol API
 
 # Use an official Python runtime as a parent image
 FROM python:3.10-slim
@@ -34,5 +34,5 @@ USER appuser
 # Expose the port the app runs on
 EXPOSE 5000
 
-# Run the application using Gunicorn for production readiness
+# Run the application using Gunicorn for deployment readiness
 CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "4", "src.api_sync:app"]
