@@ -1,0 +1,19 @@
+# NeuroSync AI - Dependencies
+# Core Engine & API
+flask==3.0.0
+gunicorn==21.2.0
+
+# Asynchronous Layer (Causal Inference)
+econml==0.14.1
+scikit-learn==1.3.2
+pandas==2.1.1
+numpy==1.26.0
+
+# Synchronous Layer (Affective Computing)
+hume==0.3.0
+
+# Experiment Tracking & Academic Rigor
+wandb==0.15.12
+jupyter==1.0.0
+matplotlib==3.8.0
+seaborn==0.13.0
