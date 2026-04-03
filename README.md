@@ -1,27 +1,27 @@
 # NeuroSync AI: Co-Adaptive Causal Attribution for Resilience and Empathy (C-CARE)
 
 **A Technical Artifact for the Mobiliar Lab for Analytics (ETH Zurich)**  
-**Target Grant:** MTEC 2026 "Human Empowerment in AI"  
+**Aligned with the MTEC Foundation research agenda**  
 **Author:** Rodolf Mikel Ghannam Neto
 
 ---
 
 ## 1. Overview and Symbiotic Research Agenda
 
-NeuroSync AI is a dual-layer conversational architecture designed to solve the paradox of artificial empathy in frontline service encounters. Built specifically to address the open challenges identified by the **Mobiliar Lab for Analytics**, this artifact operationalizes the lab's recent theoretical breakthroughs into a testable, production-ready system.
+NeuroSync AI is a dual-layer conversational architecture designed to solve the paradox of artificial empathy in frontline service encounters. Built specifically to address the open challenges identified by the **Mobiliar Lab for Analytics**, this artifact operationalises the lab's recent theoretical breakthroughs into a testable, research-grade Proof of Concept system.
 
 ### Addressing Open Challenges from the Mobiliar Lab:
-1. **The "Trojan Horse" Paradox (Uysal et al., 2025):** While Uysal proved that AI empathy protects against service failures in routine tasks but harms in complex ones, the study relied on static 2x2 experimental designs. **NeuroSync AI solves this** by introducing dynamic, real-time calibration of anthropomorphism based on user cognitive load.
-2. **The Trustworthy LLM Gap (Benk et al., 2025, AAAI):** Benk identified a critical gap between LLM standards and user expectations for transparency. **NeuroSync AI solves this** by using transparency as an operational tool: when user stress peaks, the bot explicitly down-regulates empathy, signaling its machine nature to reduce relational uncertainty.
-3. **Chatbot Uncertainty Taxonomy (Asisof, 2025):** Asisof mapped the 5 dimensions of user uncertainty (CUT). **NeuroSync AI operationalizes this taxonomy** by using causal inference to measure exactly which type of uncertainty is reduced when anthropomorphism is calibrated.
+1. **The Trojan Horse Paradox (Uysal et al., 2025):** While Uysal proved that AI empathy protects against service failures in routine tasks but harms in complex ones, the study relied on static 2x2 experimental designs. **NeuroSync AI operationalises this** by introducing dynamic, real-time calibration of anthropomorphism based on user cognitive load, extending the foundational *Trojan Horse* framework (Uysal et al., 2024).
+2. **The Trustworthy LLM Gap (Benk et al., 2025, AAAI):** Benk identified a critical gap between LLM standards and user expectations for transparency. **NeuroSync AI operationalises this** by using transparency as an operational tool: when user stress peaks, the bot explicitly down-regulates empathy, signaling its machine nature to reduce relational uncertainty.
+3. **Chatbot Uncertainty Taxonomy (Asisof, 2025):** Asisof mapped the 5 dimensions of user uncertainty (CUT). **NeuroSync AI operationalises this taxonomy** by using causal inference to measure exactly which type of uncertainty is reduced when anthropomorphism is calibrated.
 
-By bridging these gaps, NeuroSync AI is not just a chatbot—it is a **research instrument** designed to run large-scale, closed-loop field experiments that prove the causal business impact of the Mobiliar Lab's theories.
+By bridging these gaps, NeuroSync AI is designed to run large-scale, closed-loop field experiments that prove the causal business impact of the Mobiliar Lab's theories.
 
 ---
 
 ## 2. Architecture: The C-CARE Protocol
 
-The system is built on a robust, production-ready stack, prioritizing low latency and rigorous causal tracking (addressing the architectural limitations identified in *EventChat*, Ollier et al., 2024/2026).
+The system is built on a robust, research-grade Proof of Concept stack, prioritizing low latency and rigorous causal tracking (addressing the architectural limitations identified in *EventChat*, Ollier et al., 2024/2026).
 
 ```text
 [User Input: Voice/Text] 
@@ -93,7 +93,7 @@ To run the Asynchronous Causal Layer (DML) simulation:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/NeuroSync-AI.git
+   git clone https://github.com/RodolfGhannam/NeuroSync-AI.git
    cd NeuroSync-AI
    ```
 2. Install dependencies:

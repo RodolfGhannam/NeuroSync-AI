@@ -43,6 +43,10 @@ def generate_synthetic_service_data(n_samples: int = 1000) -> Tuple[np.ndarray, 
     # THE TROJAN HORSE PARADOX (Uysal et al., 2025):
     # High anthropomorphism in complex services hurts trust/NPS because it feels manipulative.
     # True TE = 2.0 - 4.0 * service_complexity
+    # (Note for future extension: This PoC uses a linear interaction for clarity. 
+    # In field deployments, the effect of complexity on empathy's effectiveness is likely 
+    # non-linear, e.g., TE = 2.0 - 4.0 * (service_complexity ** 2). The Random Forest 
+    # estimators in our DML pipeline are already equipped to handle such non-linearities.)
     # If Complexity is 0.1 (Routine), TE is +1.6 (Anthropomorphism helps)
     # If Complexity is 0.9 (Complex), TE is -1.6 (Anthropomorphism hurts)
     TE = 2.0 - 4.0 * service_complexity
@@ -76,6 +80,9 @@ def run_causal_analysis() -> None:
     est = LinearDML(
         model_y=RandomForestRegressor(n_estimators=100, max_depth=5, random_state=42),
         model_t=RandomForestRegressor(n_estimators=100, max_depth=5, random_state=42),
+        # discrete_treatment=False because our anthropomorphism treatment (T) is a continuous
+        # probability distribution (0.0 to 1.0) outputted by the api_sync.py layer.
+        # This allows us to estimate the marginal effect of an incremental increase in empathy.
         discrete_treatment=False,
         random_state=42
     )

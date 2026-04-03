@@ -65,7 +65,7 @@ def sync_affective_state() -> Tuple[Dict[str, Any], int]:
             "action": "calibrate_tone",
             "metadata": {
                 "theory_anchor": "Trojan Horse Effect (Uysal et al., 2024)",
-                "mechanism": "Neuroception of Safety"
+                "mechanism": "Affective State Calibration"
             }
         }
         

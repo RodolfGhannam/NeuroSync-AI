@@ -2,15 +2,17 @@
 # Placeholder for Hume AI (EVI) integration
 
 """
-This module will handle the real-time affective computing pipeline,
+This module handles the real-time affective computing pipeline,
 interfacing with the Hume AI Empathic Voice Interface (EVI) to decode
 user stress levels from voice prosody and text sentiment.
 
-The decoded affective state is then passed to the C-CARE Protocol
-(api_sync.py) to dynamically calibrate the conversational agent's
-anthropomorphism level.
+Intended Pipeline:
+1. Subscribe to Hume EVI websocket stream (/v0/evi/chat).
+2. Process vocal prosody and text sentiment in real-time.
+3. Map Hume's 53 emotional dimensions to a continuous stress_level metric.
+4. Output the metric to the api_sync.py layer for dynamic calibration.
 
-Status: Placeholder (to be implemented during PhD research)
+Status: Research-grade Proof of Concept (PoC) placeholder.
 """
 
 from typing import Dict, Any
